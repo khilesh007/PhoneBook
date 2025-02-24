@@ -1,0 +1,83 @@
+<!-- landing_page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Endpoints Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            padding: 10px 0;
+        }
+        .endpoint {
+            font-weight: bold;
+        }
+        .description {
+            margin-left: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to the Phonebook API Documentation</h1>
+        <p>This page provides information on the available API endpoints for the Phonebook application.</p>
+
+        <h2>Available Endpoints</h2>
+        <ul>
+            <li>
+                <span class="endpoint">POST /api/register/</span>
+                <span class="description">- Register a new user</span>
+            </li>
+            <li>
+                <span class="endpoint">POST /api/login/</span>
+                <span class="description">- Login a user and obtain a JWT token</span>
+            </li>
+            <li>
+                <span class="endpoint">POST /api/mark_as_spam/</span>
+                <span class="description">- Mark a phone number as spam</span>
+            </li>
+            <li>
+                <span class="endpoint">GET /api/search-by-name/</span>
+                <span class="description">- Search for a contact by name</span>
+            </li>
+            <li>
+                <span class="endpoint">GET /api/search-by-phone/</span>
+                <span class="description">- Search for a contact by phone number</span>
+            </li>
+            <li>
+                <span class="endpoint">POST /api/add-contact/</span>
+                <span class="description">- Add a new contact</span>
+            </li>
+            <li>
+                <span class="endpoint">GET /api/get-contacts/</span>
+                <span class="description">- Get all contacts for the logged-in user</span>
+            </li>
+            <li>
+                <span class="endpoint">POST /api/token/refresh/</span>
+                <span class="description">- Refresh the JWT token</span>
+            </li>
+        </ul>
+
+        <p>Use these API endpoints to interact with the Phonebook application. Ensure you are authenticated (logged in) before accessing most of these resources.</p>
+    </div>
+
+</body>
+</html>
